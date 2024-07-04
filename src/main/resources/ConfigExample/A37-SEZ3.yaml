@@ -1,0 +1,25 @@
+id: A37-SEZ3
+listenerCfg:
+  # IMAP listener config example
+  PollStartDate: 20230918
+  Server: imap.gmail.com:993
+  SaveDir: /opt/payara/etc/gtw-workingdir/mnt/EML
+  StartDelay: 60000
+  Folder: INBOX
+  PollFlagCode: X19EY9
+  Username: test.ticket@smeup.com
+  Poll: 60000
+  Protocol: imaps
+  ExplodeMsg: true
+  Debug: true
+  ActivatePolling: true
+  Password: xxxxxxxxxxxxxxxxx
+evtVariables:
+  - EmlFile
+  - From
+  - To
+  - Cc
+  - Subject
+evtTTL: 30000
+Pgm: EXIT3
+Env: standard
